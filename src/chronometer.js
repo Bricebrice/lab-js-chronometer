@@ -24,7 +24,9 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    // ... your code goes here
+    let newValue = String(value);
+    newValue = newValue.slice(-2);
+    return newValue.padStart(2, "0");
   }
 
   stop() {
